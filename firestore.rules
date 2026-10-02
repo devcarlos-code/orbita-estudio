@@ -1,0 +1,39 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{userId}/sessions/{sessionId} {
+      function ownsDocument() {
+        return request.auth != null && request.auth.uid == userId;
+      }
+
+      function isValidSession() {
+        let data = request.resource.data;
+        return data.keys().hasOnly([
+            'id', 'subject', 'mode', 'correct', 'total', 'grade', 'xp', 'topics', 'date'
+          ])
+          && data.id == sessionId
+          && data.subject in ['matematicas', 'quimica']
+          && data.mode is string
+          && data.mode.size() <= 80
+          && data.correct is int
+          && data.total is int
+          && data.total > 0
+          && data.total <= 100
+          && data.correct >= 0
+          && data.correct <= data.total
+          && data.grade is number
+          && data.grade >= 1
+          && data.grade <= 5
+          && (!('xp' in data) || (data.xp is int && data.xp >= 0 && data.xp <= 1020))
+          && data.topics is list
+          && data.topics.size() <= 40
+          && data.date is string
+          && data.date.size() <= 40;
+      }
+
+      allow read, delete: if ownsDocument();
+      allow create, update: if ownsDocument() && isValidSession();
+    }
+  }
+}
