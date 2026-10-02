@@ -27,10 +27,18 @@
       showPwaMessage("Para instalar Órbita, abre el menú del navegador y elige “Instalar aplicación” o “Añadir a pantalla de inicio”.");
       return;
     }
-    installPrompt.prompt();
-    const choice = await installPrompt.userChoice;
+    const prompt = installPrompt;
     installPrompt = null;
-    if (choice.outcome === "accepted") installButton.hidden = true;
+    try {
+      prompt.prompt();
+      const choice = await prompt.userChoice;
+      if (choice.outcome === "accepted") {
+        showPwaMessage("Chrome está preparando la instalación. Espera a que termine antes de abrir Órbita.");
+      }
+    } catch (error) {
+      console.error("Chrome no pudo iniciar la instalación de Órbita.", error);
+      showPwaMessage("Chrome no pudo iniciar la instalación. Inténtalo desde el menú ⋮ del navegador.");
+    }
   });
 
   window.addEventListener("appinstalled", () => {

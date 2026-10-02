@@ -1,10 +1,10 @@
 {
-  "id": "./",
+  "id": "./index.html",
   "name": "Órbita — Estudio de Matemáticas y Química",
   "short_name": "Órbita",
   "description": "Practica matemáticas y química, revisa teoría y sigue tu progreso.",
   "lang": "es",
-  "start_url": "./",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#090b13",

@@ -18,6 +18,12 @@ de abrir la página una vez con conexión, la interfaz y los ejercicios quedan
 disponibles sin conexión; el inicio de sesión de Google y la sincronización
 requieren internet.
 
+Si Android indica que Órbita ya está instalada pero no puede abrirla, elimina
+la instalación anterior desde **Ajustes → Aplicaciones** y, en Chrome, borra
+los datos del sitio `devcarlos-code.github.io` desde **Configuración → Configuración
+de sitios → Todos los sitios**. Luego vuelve a abrir la página en Chrome e
+instálala otra vez.
+
 Cada tema ofrece un taller práctico, ejercicios de selección múltiple y
 verdadero/falso, además de los formatos de práctica originales. La ruta de
 misiones registra experiencia y rachas; un tema se completa con al menos tres

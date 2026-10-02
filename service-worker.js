@@ -1,11 +1,12 @@
 "use strict";
 
-const CACHE_NAME = "orbita-shell-v1";
+const CACHE_NAME = "orbita-shell-v2";
 const APP_SHELL = [
   "./",
   "./index.html",
   "./style.css",
   "./scriot.js",
+  "./pwa.js",
   "./question-bank-extra.js",
   "./firebase-config.js",
   "./manifest.webmanifest",
