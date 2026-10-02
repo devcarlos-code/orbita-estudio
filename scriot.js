@@ -55,7 +55,7 @@
     matematicas: {
       title: "Fundamentos y conexiones matemáticas",
       description: "Consulta definiciones, procedimientos y fórmulas de los bloques matemáticos. Usa las notas como guía y revisa también el material original de tu curso cuando esté disponible.",
-      pdf: "Admision%20Modulo%20Matemtica%202021.pdf",
+      pdf: "https://github.com/devcarlos-code/orbita-estudio/releases/download/modulos-2021/Admision.Modulo.Matemtica.2021.pdf",
       pdfLabel: "Abrir módulo completo de Matemáticas",
       units: [
         ["Conjuntos, lógica y sistemas numéricos", "<p>Un conjunto es una colección bien definida de elementos. La pertenencia se escribe ∈; la inclusión, ⊆. La unión A ∪ B reúne los elementos de ambos conjuntos; la intersección A ∩ B reúne los comunes; el complemento Aᶜ comprende los elementos del universo que no pertenecen a A. Un diagrama de Venn representa gráficamente estas relaciones. En lógica, una proposición es un enunciado que puede ser verdadero o falso. La negación ¬p invierte su valor de verdad; la conjunción p ∧ q exige que ambas sean verdaderas; la disyunción p ∨ q exige que al menos una lo sea; la implicación p ⇒ q solo es falsa cuando p es verdadera y q falsa.</p><p>Los números naturales se usan para contar; los enteros incorporan el cero y los negativos; los racionales son cocientes de enteros con denominador distinto de cero. Los irracionales no pueden expresarse como fracción de enteros; su expansión decimal es infinita no periódica. Los reales reúnen racionales e irracionales. Compara fracciones usando denominadores comunes o productos cruzados. Respeta la jerarquía de operaciones: paréntesis, potencias y raíces, multiplicación y división, suma y resta.</p><div class=\"formula-box\">a/b + c/d = (ad + bc)/bd &nbsp; · &nbsp; |a| = distancia de a a 0</div>"],
@@ -74,7 +74,7 @@
     quimica: {
       title: "Materia, estructura y transformación",
       description: "Estudia cada bloque con definiciones, leyes, relaciones y procedimientos. Al final puedes abrir el módulo original completo de química disponible en tu proyecto para consultar todas sus páginas.",
-      pdf: "M%C3%B3dulo%20Quimica%20-%202021.pdf",
+      pdf: "https://github.com/devcarlos-code/orbita-estudio/releases/download/modulos-2021/Modulo.Quimica.-.2021.pdf",
       pdfLabel: "Abrir módulo completo de Química",
       units: [
         ["Materia, propiedades y medición", "<p>La materia tiene masa y ocupa espacio. Una sustancia pura posee composición definida: puede ser un elemento o un compuesto. Una mezcla combina sustancias en proporciones variables; es homogénea si presenta una sola fase y heterogénea si sus fases pueden distinguirse. Propiedades extensivas (masa, volumen) dependen de la cantidad; intensivas (densidad, temperatura de fusión) no dependen de ella.</p><p>Los cambios físicos alteran el estado o la forma sin cambiar la identidad química; los cambios químicos forman sustancias nuevas. Estados comunes: sólido (forma y volumen definidos), líquido (volumen definido y forma variable) y gas (ni forma ni volumen definidos). En el SI, la masa se expresa en kilogramos, el volumen en metros cúbicos o litros y la temperatura en kelvin. Densidad = masa/volumen; verifica que las unidades correspondan.</p><div class=\"formula-box\">Densidad (ρ) = masa (m) / volumen (V) &nbsp; · &nbsp; K = °C + 273,15</div>"],
