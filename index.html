@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#08090f">
     <meta name="description" content="Tu espacio de estudio para matemáticas y química: teoría, ejercicios y simulacros de examen.">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Órbita — Estudia a tu ritmo</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="icon-192.png" type="image/png">
+    <link rel="apple-touch-icon" href="icon-192.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,6 +18,7 @@
     <script src="firebase-config.js" defer></script>
     <script src="question-bank-extra.js" defer></script>
     <script src="scriot.js" defer></script>
+    <script src="pwa.js" defer></script>
   </head>
   <body>
     <div class="ambient ambient-one" aria-hidden="true"></div>
@@ -33,6 +39,7 @@
       <div class="top-actions">
         <button class="icon-button" id="tools-open" type="button" aria-label="Abrir herramientas de estudio" title="Herramientas">⌘</button>
         <button class="icon-button" id="sound-toggle" type="button" aria-label="Activar sonidos" aria-pressed="false" title="Sonidos desactivados">◖</button>
+        <button class="icon-button install-button" id="install-app" type="button" aria-label="Instalar Órbita" title="Instalar Órbita">⇩</button>
         <button class="account-button" id="account-open" type="button"><span class="account-dot"></span><span id="account-label">Guardar progreso</span></button>
       </div>
     </header>

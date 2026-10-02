@@ -1,77 +1,22 @@
 # Órbita
 
-
 Órbita es una página estática de estudio para matemáticas y química. La práctica,
 las misiones, las notas y la calculadora funcionan en el navegador; el progreso
 se guarda localmente. La sincronización con Google ya está configurada para el
 proyecto Firebase de esta app y es opcional: solo se activa al iniciar sesión.
 
-
-Los módulos PDF originales están publicados como recursos descargables en la
+Los módulos PDF originales se publican como recursos descargables en la
 [versión modulos-2021](https://github.com/devcarlos-code/orbita-estudio/releases/tag/modulos-2021)
-y enlazados desde la sección Teoría de GitHub Pages.
+y están enlazados desde la sección Teoría de GitHub Pages.
 
-
-Cada tema ofrece un taller práctico, ejercicios de selección múltiple y
-verdadero/falso, además de los formatos de práctica originales. La ruta de
-misiones registra experiencia y rachas; un tema se completa con al menos tres
-respuestas y un 80 % de aciertos. Los sonidos son opcionales y empiezan
-desactivados. El temporizador Pomodoro, la calculadora y los apuntes están en
-Herramientas; los apuntes solo se guardan en el dispositivo.
-
-
-## Ejecutar localmente
-
-
-Desde esta carpeta, inicia un servidor HTTP local:
-
-
-```powershell
-python -m http.server 8000
-```
-
-
-Abre `http://localhost:8000`. No abras `index.html` directamente con `file://`:
-los navegadores bloquean el acceso de Google y Firebase para archivos locales.
-
-
-## Inicio de sesión con Google y sincronización
-
-
-La app web ya está vinculada al proyecto Firebase `orbita-quimica-matematicas`.
-El proveedor Google está habilitado, `localhost` está autorizado y Cloud
-Firestore ya está creado en `us-east1` (Carolina del Sur), en modo seguro. Las
-reglas publicadas son las de `firestore.rules`: cada cuenta solo puede leer,
-crear, actualizar o borrar sus propias sesiones válidas.
-
-
-Para probar Órbita localmente, inicia el servidor HTTP de arriba y abre
-`http://localhost:8000`. Para publicar la web:
-
-
-1. Sirve el sitio por HTTPS.
-2. En Firebase Console → Authentication → Configuración → Dominios autorizados,
-   agrega el dominio exacto donde publicarás la página.
-3. Si modificas `firestore.rules`, vuelve a publicarlas en la pestaña Reglas de
-   Cloud Firestore o mediante Firebase CLI.
-
-
-La publicación de GitHub Pages está disponible en
-`https://devcarlos-code.github.io/orbita-estudio/`. Para que Google Auth funcione
-allí, autoriza el dominio `devcarlos-code.github.io` en Firebase Authentication.
-
-
-`firebase-config.js` contiene los identificadores públicos de configuración web
-que el SDK de Firebase necesita en el navegador; no contiene claves privadas.# Órbita
-
-Órbita es una página estática de estudio para matemáticas y química. La práctica,
-las misiones, las notas y la calculadora funcionan en el navegador; el progreso
-se guarda localmente. La sincronización con Google ya está configurada para el
-proyecto Firebase de esta app y es opcional: solo se activa al iniciar sesión.
-
-La publicación pública de GitHub Pages no incluye los módulos PDF originales.
-El sitio muestra esa limitación y no genera enlaces rotos; los archivos PDF
-permanecen en la copia local del proyecto.
+Órbita también se puede instalar como aplicación web progresiva (PWA) desde
+GitHub Pages o desde un servidor local seguro. En Android y en navegadores de
+escritorio compatibles, usa el botón de instalación de la barra superior o la
+opción **Instalar aplicación** del navegador. En iPhone y iPad, abre la página
+en Safari, pulsa **Compartir** y elige **Añadir a pantalla de inicio**. Después
+de abrir la página una vez con conexión, la interfaz y los ejercicios quedan
+disponibles sin conexión; el inicio de sesión de Google y la sincronización
+requieren internet.
 
 Cada tema ofrece un taller práctico, ejercicios de selección múltiple y
 verdadero/falso, además de los formatos de práctica originales. La ruta de
